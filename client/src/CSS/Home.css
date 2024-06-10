@@ -1,92 +1,68 @@
-.h-screen {
-    height: 100vh;
-  }
-  
-  .w-screen {
-    width: 100vw;
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .items-center {
-    align-items: center;
-  }
-  
-  .justify-center {
-    justify-content: center;
-  }
-  
-  .justify-end {
-    justify-content: flex-end;
-  }
-  
-  .text-white {
-    color: white;
-  }
-  
-  .font-bold {
-    font-weight: bold;
-  }
-  
-  .pr-8 {
-    padding-right: 2rem;
-  }
-  
-  .flex-col {
-    flex-direction: column;
-  }
-  
-  .space-y-4 > * + * {
-    margin-top: 1rem;
-  }
-  
-  .cursor-pointer {
-    cursor: pointer;
-  }
-  
-  .sidebar {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-  }
-  
-  .icon-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius: 50%;
-    color: #000;
-    transition: background-color 0.3s, color 0.3s, border 0.3s, box-shadow 0.3s;
-    border: 2px solid transparent;
-  }
-  
-  .icon-wrapper svg.icon {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-  }
-  
-  .icon-wrapper:hover {
-    border: 2px solid currentColor;
-    box-shadow: 0 0 10px rgb(251, 255, 0);
-  }
-  
-  .content-container {
-    margin-left: 200px;
-    max-width: 600px;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .content {
-    font-size: 1.2rem;
-    color: #333;
-  }
-  
+.home-container {
+  display: flex;
+  height: 100vh;
+}
+
+.menu-container {
+  min-width: 150px;
+}
+
+.background-page-part {
+  padding: 2rem;
+  color: #626262;
+  font: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover, .menu-item.active {
+  color: #ffffff;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.icon-wrapper svg {
+  width: 24px;
+  height: 24px;
+}
+
+.content-container {
+  flex: 1;
+  padding: 2rem;
+}
+
+.content {
+  font-size: 1.2rem;
+  color: #333;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -4,28 +4,17 @@ import '../CSS/Home.css';
 
 function Home() {
   const [selectedItem, setSelectedItem] = useState(null);
+  const [containerColor, setContainerColor] = useState('#535353'); // Default container color
 
-  const handleItemClick = (item) => {
+  const handleItemClick = (item, color) => {
     setSelectedItem(item);
-  };
-
-  const getBackgroundColor = () => {
-    switch (selectedItem) {
-      case 'projects':
-        return '#686868';
-      case 'skills':
-        return '#F5F5dc';
-      case 'about':
-        return '#7CB9E8';
-      default:
-        return '#535353';
-    }
+    setContainerColor(color);
   };
 
   const renderContent = () => {
     switch (selectedItem) {
       case 'projects':
-        return <div className="content">Here are my projects...</div>;
+        return <div  onClick={() => handleItemClick('projects', '#686868')} className={`content menu-item ${selectedItem === 'projects' && 'active'}`} style={{ color: containerColor === '#686868' ? 'white' : '#626262' }}>Here are my projects...</div>;
       case 'skills':
         return <div className="content">Here are my skills...</div>;
       case 'about':
@@ -36,18 +25,20 @@ function Home() {
   };
 
   return (
-    <div className="h-screen w-screen flex items-center justify-center" style={{ backgroundColor: getBackgroundColor() }}>
-      <div className="sidebar font-bold text-white pr-8 flex flex-col items-end space-y-4">
-        <ul className="list-none text-right">
-          <li onClick={() => handleItemClick('projects')} className="cursor-pointer">projects</li>
-          <li onClick={() => handleItemClick('skills')} className="cursor-pointer">skills</li>
-          <li onClick={() => handleItemClick('about')} className="cursor-pointer">about</li>
-        </ul>
-        <div className="flex flex-col space-y-4 mt-4">
-          <a href="https://www.linkedin.com" className="icon-wrapper"><FaLinkedin className="icon" /></a>
-          <a href="https://www.github.com" className="icon-wrapper"><FaGithub className="icon" /></a>
-          <a href="https://example.com/resume.pdf" className="icon-wrapper"><FaFileAlt className="icon" /></a>
-          <a href="https://www.twitter.com" className="icon-wrapper"><FaTwitter className="icon" /></a>
+    <div className="home-container">
+      <div className="menu-container">
+        <div className="background-page-part" style={{ backgroundColor: containerColor }}>
+          <ul className="menu font-bold mt-20">
+            <li onClick={() => handleItemClick('projects', '#686868')} className={`menu-item ${selectedItem === 'projects' && 'active'}`} style={{ color: containerColor === '#686868' ? 'white' : '#626262' }}>Projects</li>
+            <li onClick={() => handleItemClick('skills', '#ff609a')} className={`menu-item ${selectedItem === 'skills' && 'active'}`} style={{ color: containerColor === '#ff609a' ? 'white' : '#626262' }}>Skills</li>
+            <li onClick={() => handleItemClick('about', '#7CB9E8')} className={`menu-item ${selectedItem === 'about' && 'active'}`} style={{ color: containerColor === '#7CB9E8' ? 'white' : '#626262' }}>About</li>
+          </ul>
+          <div className="social-icons ">
+            <a href="https://www.linkedin.com" className="icon-wrapper mb-5" style={{ backgroundColor: 'white', color: containerColor }}><FaLinkedin className="icon" /></a>
+            <a href="https://www.github.com" className="icon-wrapper mb-5" style={{ backgroundColor: 'white', color: containerColor }}><FaGithub className="icon" /></a>
+            <a href="https://example.com/resume.pdf" className="icon-wrapper mb-5" style={{ backgroundColor: 'white', color: containerColor }}><FaFileAlt className="icon" /></a>
+            <a href="https://www.twitter.com" className="icon-wrapper mb-5" style={{ backgroundColor: 'white', color: containerColor }}><FaTwitter className="icon" /></a>
+          </div>
         </div>
       </div>
       <div className="content-container">
