@@ -9,7 +9,7 @@
 
 .background-page-part {
   padding: 2rem;
-  color: #626262;
+  color: #515151;
   font: bold;
   display: flex;
   flex-direction: column;
@@ -61,8 +61,7 @@
 
 .content {
   font-size: 1.2rem;
-  color: #333;
-  background: rgba(255, 255, 255, 0.8);
+  color: #868686;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgb(83, 44, 44);
 }

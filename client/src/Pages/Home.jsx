@@ -16,11 +16,11 @@ function Home() {
       case 'projects':
         return <div  onClick={() => handleItemClick('projects', '#686868')} className={`content menu-item ${selectedItem === 'projects' && 'active'}`} style={{ color: containerColor === '#686868' ? 'white' : '#626262' }}>Here are my projects...</div>;
       case 'skills':
-        return <div className="content">Here are my skills...</div>;
+        return <div className="content"> <a href=""></a></div>;
       case 'about':
-        return <div className="content">About me...</div>;
+        return <div className="content"><a href=""></a></div>;
       default:
-        return <div className="content">Select an item to see more...</div>;
+        return <div className="content"><a href=""></a></div>;
     }
   };
 
