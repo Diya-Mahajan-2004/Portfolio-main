@@ -1,3 +1,18 @@
+/* Add styles for the content inside the Skills component */
+.content h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+
+/* Ensure the content container has padding and text alignment */
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* General container and sidebar styling */
 .container {
   display: flex;
   min-height: 100vh;
@@ -9,7 +24,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  width: 250px;
+  width: 150px;
+  
 }
 
 .menu {
@@ -60,8 +76,4 @@
   flex: 1;
   padding: 20px;
   color: white;
-}
-
-.content {
-  font-size: 16px;
 }
