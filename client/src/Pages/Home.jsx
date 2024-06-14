@@ -21,22 +21,29 @@ function Home() {
   const renderContent = () => {
     switch (selectedItem) {
       case "projects":
-        return <Project/>;
+        return <Project />;
       case "skills":
         return <Skills />; // Render the Skills component
       case "about":
-        return <About/>;
+        return <About />;
       default:
-        return <div className="content">b </div>;
+        return (
+          <div className="default-content">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center text-gray-800">Welcome to My Portfolio!</h2>
+            <p className="text-lg text-center text-gray-600">
+              Click on the menu items above to explore my projects, skills, and learn more about me.
+            </p>
+          </div>
+        );
     }
   };
 
   return (
     <div className="container" style={{ backgroundColor: containerColor }}>
-      <div className="sidebar ">
+      <div className="sidebar">
         <ul className="menu">
           <li
-            onClick={() => handleItemClick("projects", "#0FA4AF")}
+            onClick={() => handleItemClick("projects", "#A07855FF")}
             className={`menu-item ${selectedItem === "projects" && "active"}`}
           >
             Projects
@@ -72,14 +79,14 @@ function Home() {
           </a>
           <a
             href="https://example.com/resume.pdf"
-            className="icon-wrapper "
+            className="icon-wrapper"
             style={{ color: containerColor }}
           >
             <FaFileAlt className="icon bg-white text-[2rem] rounded-full p-1" />
           </a>
           <a
             href="https://www.twitter.com"
-            className="icon-wrapper "
+            className="icon-wrapper"
             style={{ color: containerColor }}
           >
             <FaXTwitter className="icon bg-white text-[2rem] rounded-full p-1" />

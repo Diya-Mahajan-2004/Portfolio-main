@@ -1,3 +1,5 @@
+/* Home.css */
+
 /* General container and sidebar styling */
 .container {
   display: flex;
@@ -77,62 +79,6 @@
   font-size: 1.5rem;
 }
 
-.skills {
-  background-color: #6d1938;
-}
-
-.about {
-  background-color: #184076;
-}
-
-.project {
-  background-color: #e1fffc;
-}
-
-.highlight {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-}
-/* About. */
-
-
-
-.font-montserrat {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.font-open-sans {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.text-gray-300 {
-  color: #d1d5db;
-}
-
-.text-white {
-  color: #ffffff;
-}
-
-.list-inside {
-  list-style-position: inside;
-}
-
-.list-disc {
-  list-style-type: disc;
-}
-
-.shadow-lg {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.shadow-md {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 /* Skills */
 
 /* Home.css or Skills.css */
@@ -144,10 +90,6 @@
 
 .skill-item:hover .icon-wrapper {
   transform: rotate(360deg);
-}
-
-.icon-wrapper {
-  transition: transform 0.3s;
 }
 
 .overlay {
