@@ -4,6 +4,7 @@ import bot1Image from '../assets/bot1.png';
 import weatherpicImage from '../assets/weatherpic.png';
 import AyuvWebsiteImage from '../assets/AyuvWebsite.png';
 import GuardiianGigImage from '../assets/GuardiianGig.png';
+import ResumeImage from '../assets/Resume.png';
 
 function Project() {
   const projectsSet1 = [
@@ -41,6 +42,12 @@ function Project() {
       title: "Weather-check",
       description: "Weather app with HTML, CSS, JS, and API",
       image: weatherpicImage,
+      link: "#"
+    },
+    {
+      title: "Interactive Resume",
+      description: "Interactive Resume using HTML, CSS, JS",
+      image: ResumeImage,
       link: "#"
     }
   ];

@@ -13,6 +13,7 @@
   justify-content: space-between;
   padding: 20px;
   width: 200px;
+  position: static;
 }
 
 .menu {
@@ -112,4 +113,31 @@
 
 .skill-name {
   z-index: 10;
+}
+
+/*ABOUt*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slideIn {
+  animation: slideIn 1s ease-in-out;
 }
