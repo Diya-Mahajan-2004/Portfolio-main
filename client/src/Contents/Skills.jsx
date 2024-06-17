@@ -17,7 +17,6 @@ const skills = [
   { name: "Redux", icon: <SiRedux /> },
   { name: "Next.js", icon: <SiNextdotjs /> },
   { name: "Webpack", icon: <SiWebpack /> },
-  { name: "Babel", icon: <SiBabel /> },
   { name: "GraphQL", icon: <SiGraphql /> },
   { name: "Figma", icon: <SiFigma /> },
   { name: "Git", icon: <FaGitAlt /> },

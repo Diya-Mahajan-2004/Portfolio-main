@@ -5,6 +5,7 @@ import weatherpicImage from '../assets/weatherpic.png';
 import AyuvWebsiteImage from '../assets/AyuvWebsite.png';
 import GuardiianGigImage from '../assets/GuardiianGig.png';
 import ResumeImage from '../assets/Resume.png';
+import Weather1Image from '../assets/Weather1.png'
 
 function Project() {
   const projectsSet1 = [
@@ -12,13 +13,13 @@ function Project() {
       title: "Navigate",
       description: "A frontend self-designed website for booking hotels and flights",
       image: NavigateWebsiteImage,
-      link: "#"
+      link: "/case-study/navigate"
     },
     {
       title: "AI CHATBOT",
       description: "AI chatbot using Gemini AI API",
       image: bot1Image,
-      link: "#"
+      link: "/case-study/chatbot"
     }
   ];
 
@@ -27,13 +28,13 @@ function Project() {
       title: "Healthcare Website",
       description: "Website for a Healthcare startup",
       image: AyuvWebsiteImage,
-      link: "#"
+      link: "/case-study/ayuv"
     },
     {
       title: "Guardian Gig",
       description: "Decentralized freelancing website for hackathon.",
       image: GuardiianGigImage,
-      link: "#"
+      link: "/case-study/guardiangig"
     }
   ];
 
@@ -41,14 +42,14 @@ function Project() {
     {
       title: "Weather-check",
       description: "Weather app with HTML, CSS, JS, and API",
-      image: weatherpicImage,
-      link: "#"
+      image: Weather1Image,
+      link: "/case-study/weatherapp"
     },
     {
       title: "Interactive Resume",
       description: "Interactive Resume using HTML, CSS, JS",
       image: ResumeImage,
-      link: "#"
+      link: "/case-study/resume"
     }
   ];
 
@@ -89,7 +90,7 @@ function Project() {
       </div>
 
       <div className="text-center mt-8">
-        <a href="https://github.com/your-username" className="text-lg text-black hover:underline">See more projects on GitHub</a>
+        <a href="https://github.com/Diya-Mahajan-2004?tab=repositories" className="text-lg text-black hover:underline">See more projects on GitHub</a>
       </div>
     </div>
   );
