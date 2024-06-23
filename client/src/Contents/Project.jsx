@@ -11,47 +11,49 @@ function Project() {
   const projectsSet1 = [
     {
       title: "Navigate",
-      description: "A frontend self-designed website for booking hotels and flights",
+      description: "My first project: a frontend-only website design for booking hotels and flights. This project focuses on the user interface and visual elements without backend functionality.",
       image: NavigateWebsiteImage,
       link: "/case-study/navigate"
     },
+    
     {
       title: "AI CHATBOT",
-      description: "AI chatbot using Gemini AI API",
+      description: "An intelligent chatbot leveraging the Gemini AI API to facilitate seamless and engaging conversations with users, providing real-time responses.",
       image: bot1Image,
       link: "/case-study/chatbot"
     }
   ];
-
+  
   const projectsSet2 = [
     {
       title: "Healthcare Website",
-      description: "Website for a Healthcare startup",
+      description: "A comprehensive website developed for a healthcare startup, designed to provide users with easy access to health services and information.",
       image: AyuvWebsiteImage,
       link: "/case-study/ayuv"
     },
     {
       title: "Guardian Gig",
-      description: "Decentralized freelancing website for hackathon.",
+      description: "A decentralized freelancing platform created for a hackathon, enabling transparent and secure interactions between freelancers and clients.",
       image: GuardiianGigImage,
       link: "/case-study/guardiangig"
     }
   ];
-
+  
   const projectsSet3 = [
     {
       title: "Weather-check",
-      description: "Weather app with HTML, CSS, JS, and API",
+      description: "A weather application built using HTML, CSS, JavaScript, and API integration to deliver accurate and up-to-date weather information.",
       image: Weather1Image,
       link: "/case-study/weatherapp"
     },
     {
       title: "Interactive Resume",
-      description: "Interactive Resume using HTML, CSS, JS",
+      description: "A dynamic and engaging resume created with HTML, CSS, and JavaScript, showcasing skills and experience in an interactive format.",
       image: ResumeImage,
       link: "/case-study/resume"
     }
   ];
+  
 
   const renderProjects = (projects) => (
     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
