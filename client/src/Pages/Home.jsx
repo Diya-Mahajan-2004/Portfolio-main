@@ -5,6 +5,7 @@ import Skills from "../Contents/Skills";
 import Project from "../Contents/Project";
 import About from "../Contents/About";
 import First from "../Contents/First";
+/*import Certification from "../Contents/Certification"; */
 
 import "../CSS/Home.css";
 
@@ -36,6 +37,8 @@ function Home() {
         return <Skills />; // Render the Skills component
       case "about":
         return <About />;
+      case "certifications":
+        return <Certification />;
       default:
         return <First onGetStartedClick={handleGetStartedClick} />;
     }
@@ -51,6 +54,7 @@ function Home() {
           >
             Projects
           </li>
+          
           <li
             onClick={() => handleItemClick("skills", "#ff609a")}
             className={`menu-item pb-6 ${selectedItem === "skills" && "active"}`}
@@ -59,10 +63,17 @@ function Home() {
           </li>
           <li
             onClick={() => handleItemClick("about", "#408EC6")}
-            className={`menu-item ${selectedItem === "about" && "active"}`}
+            className={`menu-item pb-6 ${selectedItem === "about" && "active"}`}
           >
             About
           </li>
+          <li
+            onClick={() => handleItemClick("certifications", "#6A0572")}
+            className={`menu-item pb-6 ${selectedItem === "certifications" && "active"}`}
+          >
+            Certifications
+          </li>
+         
         </ul>
 
         <div className="social-icons static">

@@ -1,0 +1,8 @@
+/* styles.css or tailwind.css */
+.border-gradient-pink {
+    border-width: 8px; /* Adjust thickness as needed */
+    border-style: solid;
+    border-image: linear-gradient(to right, #ff9eca, #71b8ff);
+    
+  }
+  
