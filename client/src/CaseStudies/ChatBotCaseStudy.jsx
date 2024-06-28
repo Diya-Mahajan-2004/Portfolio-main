@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import ChatBotvideo from "./photos/ChatBotvideo.mp4";
 import ChatBot from "./photos/ChatBot.png";
 import ChatBot2 from "./photos/ChatBot2.png";
 import ChatBot3 from "./photos/ChatBot3.png";
 
 function ChatBotCaseStudy() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5; // Slow down the video playback rate
+    }
+  }, []);
+
   return (
     <div className="bg-gradient-to-r from-[#1d3040] to-[#0063B2FF] p-8 rounded-lg shadow-lg max-w-screen-lg mx-auto animate-fade-in text-gray-200">
       <h1 className="text-4xl font-bold mb-8 text-center">ChatBot Case Study</h1>
@@ -13,9 +21,12 @@ function ChatBotCaseStudy() {
       <div className="mb-8 border-[6px] border-[#7ed4fc] bg-gradient-to-r from-[#0063B2FF] to-[#64b3d7] rounded-lg overflow-hidden">
         {/* Video of the ChatBot */}
         <video
+          ref={videoRef}
           src={ChatBotvideo}
-          controls
-          className="w-full h-auto rounded-lg shadow-md"
+          autoPlay
+          loop
+          muted
+          className="w-full h-auto rounded-lg shadow-md pointer-events-none" // Make the video unclickable
         />
       </div>
 
