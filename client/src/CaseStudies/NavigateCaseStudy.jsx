@@ -8,17 +8,17 @@ import Navigatevideo from './photos/Navigatevideo.mp4';
 
 function NavigateCaseStudy() {
   return (
-    <div className="bg-gradient-to-r from-[#c1dced] to-[#edf2f7] p-8 rounded-lg shadow-lg max-w-screen-lg mx-auto animate-fade-in">
+    <div className="bg-gradient-to-r from-[#FC766AFF] to-[#bdddff] p-8 rounded-lg shadow-lg max-w-screen-lg mx-auto animate-fade-in">
       <h1 className="text-4xl font-bold mb-8 text-center text-gray-900">Navigate</h1>
 
-      <div className="mb-8 bg-gradient-to-r from-[#f5d4e3] to-[#edf2f7] rounded-lg overflow-hidden border-4 border-[#f5d4e3]">
+      <div className="mb-8 bg-gradient-to-r from-[#5B84B1FF] to-[#edf2f7] rounded-lg overflow-hidden border-4 border-[#5B84B1FF]">
         <video autoPlay muted loop className="w-full h-auto rounded-lg shadow-md">
           <source src={Navigatevideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
 
-      <div className="bg-gradient-to-r from-[#f5d4e3] to-[#edf2f7] p-6 rounded-lg shadow-md mb-8 transform hover:scale-105 transition-transform duration-300">
+      <div className="bg-gradient-to-r from-[#5B84B1FF] to-[#ffc0ba] p-6 rounded-lg shadow-md mb-8 transform hover:scale-105 transition-transform duration-300">
         <p className="text-lg leading-relaxed text-gray-700">
           Navigate is one of my first coding projects, a frontend-only website designed for booking hotels and flights. Utilizing HTML, CSS, JavaScript, and Bootstrap, this project represents a significant milestone in my coding journey. Though the website lacks full responsiveness, it serves as a testament to the skills and knowledge I gained through this endeavor.
         </p>
@@ -30,7 +30,7 @@ function NavigateCaseStudy() {
         </p>
       </div>
 
-      <div className="bg-gradient-to-r from-[#edf2f7] to-[#f5d4e3] p-6 rounded-lg shadow-md mb-8 transform hover:scale-105 transition-transform duration-300">
+      <div className="bg-gradient-to-r from-[#ffc0ba] to-[#5B84B1FF] p-6 rounded-lg shadow-md mb-8 transform hover:scale-105 transition-transform duration-300">
         <h2 className="text-2xl font-semibold mb-4 text-gray-800">Technologies Used</h2>
         <ul className="list-disc list-inside pl-4 text-gray-700">
           <li><strong>HTML:</strong> The backbone of the website, providing the structure and content.</li>
@@ -40,7 +40,7 @@ function NavigateCaseStudy() {
         </ul>
       </div>
 
-      <div className="bg-gradient-to-r from-[#f5d4e3] to-[#edf2f7] p-6 rounded-lg shadow-md mb-8 transform hover:scale-105 transition-transform duration-300">
+      <div className="bg-gradient-to-r from-[#5B84B1FF] to-[#ffc0ba] p-6 rounded-lg shadow-md mb-8 transform hover:scale-105 transition-transform duration-300">
         <h2 className="text-2xl font-semibold mb-4 text-gray-800">Challenges</h2>
         <p className="text-lg leading-relaxed text-gray-700">
           One of the main challenges was ensuring the website's design met my vision, despite being my first project. Balancing aesthetics with functionality was not easy, and I spent a considerable amount of time refining the user interface.
@@ -50,7 +50,7 @@ function NavigateCaseStudy() {
         </p>
       </div>
 
-      <div className="bg-gradient-to-r from-[#edf2f7] to-[#f5d4e3] p-6 rounded-lg shadow-md mb-8 transform hover:scale-105 transition-transform duration-300">
+      <div className="bg-gradient-to-r from-[#ffc0ba] to-[#5B84B1FF] p-6 rounded-lg shadow-md mb-8 transform hover:scale-105 transition-transform duration-300">
         <h2 className="text-2xl font-semibold mb-4 text-gray-800">Outcome</h2>
         <p className="text-lg leading-relaxed text-gray-700">
           The project successfully resulted in a functional and visually appealing website. The user interface is straightforward, allowing users to navigate the booking process easily. This project significantly enhanced my skills in frontend development, error resolution, and Bootstrap.
@@ -64,7 +64,7 @@ function NavigateCaseStudy() {
 
       <div className="grid grid-cols-1 gap-8 mb-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
         {[Navigate, Navigate2, Navigate3, Navigate4, Navigate5].map((image, index) => (
-          <div key={index} className="border-4 border-[#f5d4e3] rounded-lg overflow-hidden flex justify-center items-center">
+          <div key={index} className="border-4 border-[#5B84B1FF] rounded-lg overflow-hidden flex justify-center items-center">
             <img
               src={image}
               alt={`Navigate Website ${index + 1}`}
