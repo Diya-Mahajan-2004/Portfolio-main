@@ -67,12 +67,7 @@ function Home() {
           >
             About
           </li>
-          <li
-            onClick={() => handleItemClick("certifications", "#6A0572")}
-            className={`menu-item pb-6 ${selectedItem === "certifications" && "active"}`}
-          >
-            Certifications
-          </li>
+         
          
         </ul>
 
