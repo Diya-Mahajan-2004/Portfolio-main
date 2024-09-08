@@ -15,6 +15,7 @@ function AyuvCaseStudy() {
 
   return (
     <div className="bg-gradient-to-r from-[#345a64] to-[#66A5AD] p-8 rounded-lg shadow-lg max-w-screen-lg mx-auto animate-fade-in text-gray-100">
+      <div></div>
       <h1 className="text-4xl font-bold mb-8 text-center">Ayuv Case Study</h1>
 
       {/* Main content of your case study */}
